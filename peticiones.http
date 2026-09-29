@@ -1,0 +1,20 @@
+### 1. Obtener todos los productos
+GET http://localhost:8080/api/products
+
+### 2. Obtener un producto en específico
+GET http://localhost:8080/api/products/S10_1678
+
+### 3. Crear un nuevo producto (POST)
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "productCode": "TEST_9999",
+  "productName": "Auto de Prueba Go",
+  "productLine": "Classic Cars",
+  "quantityInStock": 100,
+  "buyPrice": 49.99
+}
+
+### 4. Eliminar el producto recién creado (DELETE)
+DELETE http://localhost:8080/api/products/TEST_9999
